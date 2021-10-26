@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jacksonfdam.methoring.lab01.databinding.ActivityMainBinding
 import dagger.Component
+import kotlinx.android.synthetic.main.activity_main.view.*
 import javax.inject.Inject
 
 /*
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         DaggerMagicBox.create().poke(this)
         setContentView(view)
-        // view.textView.text = info.text
+        view.textView.text = info.text
     }
 }
 
